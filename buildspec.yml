@@ -3,7 +3,7 @@ phases:
   install:
     commands:
       - aws cloudformation package --template-file LambdaParagraphLinker.yaml --s3-bucket onlaw
-                                   --output-template-file NewSamTemplate.yaml
+                                   --output-template-file NewSamTemplate.yaml --region eu-west-1
 artifacts:
   type: zip
   files:
